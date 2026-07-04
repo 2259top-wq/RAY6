@@ -123,7 +123,7 @@ export default function App() {
       {/* Cosmic Footer */}
       <footer className="cosmic-footer">
         <p style={{ marginBottom: '0.4rem' }}>
-          星軌之鏡 ✦ 古典占星計算儀 © 2026
+          星軌之鏡 ✦ 古典占星計算儀 © 2026 (v1.1.0)
         </p>
         <p style={{ fontSize: '0.75rem', opacity: '0.7' }}>
           理論源於西元二世紀克勞狄烏斯·托勒密（Claudius Ptolemaeus）所著之《占星四書》（Tetrabiblos）。
