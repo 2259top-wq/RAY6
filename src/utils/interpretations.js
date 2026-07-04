@@ -605,3 +605,4 @@ export function generateTransitOracle(aspects) {
   return { title: '行運星曜脈動預報 (Transit Climate Forecast)', sections };
 }
 
+// Trigger rebuild and deployment
