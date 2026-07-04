@@ -575,9 +575,13 @@ export default function SynastryView({ onSaveHistory, loadedItem }) {
                   <h4 style={{ color: 'var(--neon-cyan)', marginBottom: '0.6rem', fontSize: '0.95rem', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <span style={{ fontSize: '0.7rem' }}>◆</span> {sec.header}
                   </h4>
-                  <p style={{ textIndent: '2em', margin: 0, textAlign: 'justify' }}>
-                    {sec.content}
-                  </p>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+                    {sec.content.split('\n').filter(p => p.trim()).map((pText, pIdx) => (
+                      <p key={pIdx} style={{ textIndent: '2em', margin: 0, textAlign: 'justify' }}>
+                        {pText}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
